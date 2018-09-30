@@ -152,10 +152,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ProfessionalC++.cpp" />
+    <ClCompile Include="Problem6.cpp" />
+    <ClCompile Include="Problem7.cpp" />
+    <ClCompile Include="Day2.cpp" />
+    <ClCompile Include="Problem8.cpp" />
+    <ClCompile Include="SpreadSheetCell.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ProfessionalC++.h" />
+    <ClInclude Include="Day2.h" />
+    <ClInclude Include="SpreadSheetCell.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

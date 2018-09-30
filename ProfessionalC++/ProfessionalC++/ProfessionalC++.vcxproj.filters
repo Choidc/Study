@@ -13,15 +13,48 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\Day3">
+      <UniqueIdentifier>{b9cb58ef-1e00-4c96-9daf-202ea20f4438}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Day3">
+      <UniqueIdentifier>{978fd2fc-414b-4cb3-baea-fa2811b78da3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Day2">
+      <UniqueIdentifier>{dcff0927-14a5-4e52-ab18-68832ec6836c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Day2">
+      <UniqueIdentifier>{5a2d8517-c5dd-4a3e-8522-8a5c9f546665}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Day4">
+      <UniqueIdentifier>{1371ebac-a64f-4db2-aa88-0ae3f611583b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Day4">
+      <UniqueIdentifier>{b0bdbc15-667a-435e-92b4-6cab814ab404}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ProfessionalC++.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="Day2.cpp">
+      <Filter>소스 파일\Day2</Filter>
+    </ClCompile>
+    <ClCompile Include="Problem6.cpp">
+      <Filter>소스 파일\Day2</Filter>
+    </ClCompile>
+    <ClCompile Include="Problem7.cpp">
+      <Filter>소스 파일\Day3</Filter>
+    </ClCompile>
+    <ClCompile Include="SpreadSheetCell.cpp">
+      <Filter>소스 파일\Day3</Filter>
+    </ClCompile>
+    <ClCompile Include="Problem8.cpp">
+      <Filter>소스 파일\Day4</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ProfessionalC++.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="Day2.h">
+      <Filter>헤더 파일\Day2</Filter>
+    </ClInclude>
+    <ClInclude Include="SpreadSheetCell.h">
+      <Filter>헤더 파일\Day3</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
