@@ -42,11 +42,17 @@
     <ClCompile Include="Problem7.cpp">
       <Filter>소스 파일\Day3</Filter>
     </ClCompile>
-    <ClCompile Include="SpreadSheetCell.cpp">
-      <Filter>소스 파일\Day3</Filter>
-    </ClCompile>
     <ClCompile Include="Problem8.cpp">
       <Filter>소스 파일\Day4</Filter>
+    </ClCompile>
+    <ClCompile Include="SpreadSheetCell.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SpreadSheetImpl.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SpreadSheet.cpp">
+      <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -54,7 +60,13 @@
       <Filter>헤더 파일\Day2</Filter>
     </ClInclude>
     <ClInclude Include="SpreadSheetCell.h">
-      <Filter>헤더 파일\Day3</Filter>
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="SpreadSheetImpl.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="SpreadSheet.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
