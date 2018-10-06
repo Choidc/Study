@@ -1,20 +1,27 @@
-#pragma once
-#include "SpreadSheetCell.h"
-#include <memory>
-
-class SpreadSheetImpl;
-class SpreadSheetApplication;
-class SpreadSheet
-{
-	public:
-		SpreadSheet(const SpreadSheetApplication& theApp, int inWidth, int inHeight);
-		SpreadSheet(const SpreadSheetApplication& theApp);
-		SpreadSheet(const SpreadSheet& src);
-		~SpreadSheet();
-		SpreadSheet& operator=(const SpreadSheet& rhs);
-		void setCellAt(int x, int y, const SpreadSheetCell& inCell);
-		SpreadSheetCell& getCellAt(int x, int y);
-		int getID() const;
-	private:
-		std::unique_ptr<SpreadSheetImpl> mImpl;
-};
+//#pragma once
+//
+//#include "SpreadsheetCell.h"
+//#include <memory>
+//
+//// forward declarations
+//class SpreadsheetImpl;
+//class SpreadsheetApplication;
+//
+//class Spreadsheet
+//{
+//public:
+//	Spreadsheet(const SpreadsheetApplication& theApp, int inWidth, int inHeight);
+//	Spreadsheet(const SpreadsheetApplication& theApp);
+//	Spreadsheet(const Spreadsheet& src);
+//	~Spreadsheet();
+//
+//	Spreadsheet& operator=(const Spreadsheet& rhs);
+//
+//	void setCellAt(int x, int y, const SpreadsheetCell& inCell);
+//	SpreadsheetCell& getCellAt(int x, int y);
+//
+//	int getId() const;
+//
+//private:
+//	std::unique_ptr<SpreadsheetImpl> mImpl;
+//};

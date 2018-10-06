@@ -1,42 +1,42 @@
-#include "SpreadSheet.h"
-
-SpreadSheet::SpreadSheet(const SpreadSheetApplication& theApp, int inWidth, int inHeight)
-{
-	mImpl = std::make_unique<SpreadSheetImpl>(theApp, inWidth, inHeight);
-}
-
-SpreadSheet::SpreadSheet(const SpreadSheetApplication& theApp)
-{
-	mImpl = std::make_unique<SpreadSheetImpl>(theApp);
-}
-
-SpreadSheet::SpreadSheet(const SpreadSheet& src)
-{
-	mImpl = std::make_unique<SpreadSheetImpl>(*src.mImpl);
-}
-
-SpreadSheet::~SpreadSheet()
-{
-
-}
-
-SpreadSheet& SpreadSheet::operator= (const SpreadSheet& rhs)
-{
-	*mImpl = *rhs.mImpl;
-	return *this;
-}
-
-void SpreadSheet::setCellAt(int x, int y, const SpreadSheetCell& inCell)
-{
-	mImpl->setCellAt(x, y, inCell);
-}
-
-SpreadSheetCell& SpreadSheet::getCellAt(int x, int y)
-{
-	return mImpl->getCellAt(x, y);
-}
-
-int SpreadSheet::getID() const
-{
-	return mImpl->getID();
-}
+//#include "Spreadsheet.h"
+//#include "SpreadsheetImpl.h"
+//
+//void Spreadsheet::setCellAt(int x, int y, const SpreadsheetCell& inCell)
+//{
+//	mImpl->setCellAt(x, y, inCell);
+//}
+//
+//SpreadsheetCell& Spreadsheet::getCellAt(int x, int y)
+//{
+//	return mImpl->getCellAt(x, y);
+//}
+//
+//int Spreadsheet::getId() const
+//{
+//	return mImpl->getId();
+//}
+//
+//Spreadsheet::Spreadsheet(const SpreadsheetApplication &theApp, int inWidth, int inHeight)
+//{
+//	mImpl = std::make_unique<SpreadsheetImpl>(theApp, inWidth, inHeight);
+//}
+//
+//Spreadsheet::Spreadsheet(const SpreadsheetApplication& theApp)
+//{
+//	mImpl = std::make_unique<SpreadsheetImpl>(theApp);
+//}
+//
+//Spreadsheet::Spreadsheet(const Spreadsheet& src)
+//{
+//	mImpl = std::make_unique<SpreadsheetImpl>(*src.mImpl);
+//}
+//
+//Spreadsheet::~Spreadsheet()
+//{
+//}
+//
+//Spreadsheet& Spreadsheet::operator=(const Spreadsheet& rhs)
+//{
+//	*mImpl = *rhs.mImpl;
+//	return *this;
+//}
