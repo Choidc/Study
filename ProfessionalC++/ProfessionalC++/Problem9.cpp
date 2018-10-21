@@ -4,14 +4,6 @@
 #include <string>
 using namespace std;
 
-
-int main ()
-{
-
-}
-
-
-
 void one ()
 {
 	int count, input;
@@ -63,7 +55,7 @@ void two ()
 		printf ("%d\n", v[i]);
 }
 
-void two () // time over
+void twotwo () // time over
 {
 	int count, *arr;
 	cin >> count;
