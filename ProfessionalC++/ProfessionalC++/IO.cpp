@@ -293,230 +293,230 @@ bool changeNumberForID (const string& inFileName, int inID,
 	}
 	return true;
 }
-
-int main (int argc, char* argv[])
-{
-	
-#pragma region Output
-	//const char* test = "hello";
-	//rawPutChar (test, 1);
-	//rawWrite (test, strlen (test));
-
-	//cout << endl;
-	//if (cout.good ())
-	//	cout << "All good" << endl;
-
-	//cout.flush ();
-	//if (cout.fail ())
-	//	cerr << "Unable to flush to standard out" << endl;
-
-	//cout.exceptions (ios::failbit | ios::badbit | ios::eofbit);
-	//try
-	//{
-	//	cout << "Hello World." << endl;
-	//}
-	//catch (const ios_base::failure& ex)
-	//{
-	//	cerr << "Caught exception: " << ex.what ()
-	//		<< ", error code = " << ex.code () << endl;
-	//}
-
-	//// 불 타입
-	//bool myBool = true;
-	//cout << "This is the default: " << myBool << endl;
-	//cout << "This should be true: " << boolalpha << myBool << endl;
-	//cout << "This should be 1: " << noboolalpha << myBool << endl;
-
-	//// 6개의 공간을 만듦
-	//int i = 123;
-	//printf ("This should be '   123': %6d\n", i);
-	//cout << "This should be '   123': " << setw (6) << i << endl;
-
-	//// 6개에 공간 중 빈 공간을 0으로 채움
-	//printf ("This should be '000123': %06d\n", i);
-	//cout << "This should be '000123': " << setfill ('0') << setw (6) << i << endl;
-
-	//// *로 채움
-	//cout << "This should be '***123': " << setfill ('*') << setw (6) << i << endl;
-	//// 빈칸채우기 용 문자 리셋
-	//cout << setfill (' ');
-
-	//// 소수점 값
-	//cout.precision (5);
-	//cout << "This should be '1.2346': " << 1.23456789 << endl;
-
-	//// 부동 소수점 값
-	//double dbl = 1.452;
-	//double dbl2 = 5;
-	//cout << "This should be ' 5': " << setw (2) << noshowpoint << dbl2 << endl;
-	//cout << "This should be @@1.452: " << setw (7) << setfill ('@') << dbl << endl;
-	//
-	//cout << setfill (' ');
-
-	//// 지역(국가)에 맞게 숫자 포맷팅
-	//// 로케일 객체
-	//cout.imbue (locale (""));
-	//cout << "This is 1234567 formatted according to your location: " << 1234567 << endl;
-
-	//// 화폐포맷팅
-	//cout << "This should be a money amount of 120000, "
-	//	<< "formatted according to your location: "
-	//	<< put_money ("120000") << endl;
-
-	//// 시간날짜 포맷팅
-
-	//time_t t_t = time (nullptr);
-	//tm t;
-	//localtime_s (&t, &t_t);
-	//cout << "This should be the current date and time formatted according to your location: "
-	//	<< put_time (&t, "%c") << endl;
-
-	//// C++14: 따옴표로 둘러쌓인 문자열
-	//cout << "This should be: \"Quoted string with \\\"embedded quotes\\\".\": "
-	//	<< quoted ("Quoted string with \"embedded quotes\".") << endl;
-#pragma endregion
-
-#pragma region Input
-	//string theName = readName (cin);
-	//cout << "The name is \"" << theName << "\"" << endl;
-
-	// get & unget
-	//getReservationData ();
-	
-	//string mystring;
-	//getline (cin, mystring);
-	///////
-	//cout << "Enter numbers on separate lines to add. "
-	//	<< "Use Control+D to finish (Control+Z in Windows)." << endl;
-	//int sum = 0;
-
-
-	//if (!cin.good ())
-	//{
-	//	cerr << "Standard input is in a bad state!" << endl;
-	//	return 1;
-	//}
-
-	//int number;
-	//while (!cin.bad ())
-	//{
-	//	cin >> number;
-	//	if (cin.good ())
-	//	{
-	//		sum += number;
-	//	}
-	//	else if (cin.eof ())
-	//	{
-	//		break;
-	//	}
-	//	else if (cin.fail ())
-	//	{
-	//		cin.clear (); // 에러 상태 클리어
-	//		string badToken;
-	//		cin >> badToken; // 잘못된 데이터를 꺼냄
-	//		cerr << "WARNING: Bad input encountered: " << badToken << endl;
-	//	}
-	//}
-	//cout << "The sum is " << sum << endl;
-
-	///////
-	//cout << "First, let's create a muffin in code and output it." << endl;
-
-	//Muffin m;
-	//m.setDescription ("Giant_Blueberry_Muffin");
-	//m.setSize (42);
-	//m.setHasChocolateChips (false);
-
-	//m.output ();
-
-	//cout << "Now we'll create a muffin from a string stream" << endl;
-
-	//istringstream instream ("My_Muffin 2 true");
-	//Muffin m2 = createMuffin (instream);
-
-	//m2.output ();
-
-#pragma endregion
-
-#pragma region FileIO
-	//ofstream outFile ("test.txt", ios_base::trunc);
-	//if (!outFile.good ())
-	//{
-	//	cerr << "Error while opening output file!" << endl;
-	//	return -1;
-	//}
-	//outFile << "There were " << argc << " arguments to this program." << endl;
-	//outFile << "They are: " << endl;
-	//for (int i = 0; i < argc; i++)
-	//{
-	//	outFile << argv[i] << endl;
-	//}
-
-	//ofstream fout ("test.out");
-	//if (!fout)
-	//{
-	//	cerr << "Error opening test.out for writing" << endl;
-	//	return 1;
-	//}
-
-	//// 1. 파일에 12345 출력
-	//fout << "12345";
-
-	//// 2. 스트림의 위치가 5인지 체크
-	//ios_base::streampos curPos = fout.tellp ();
-	//if (5 == curPos)
-	//{
-	//	cout << "Test passed: Currently at position 5" << endl;
-	//}
-	//else
-	//{
-	//	cout << "Test failed: Not at position 5" << endl;
-	//}
-
-	//// 3. 시작위치에서 출력스트림 위치를 2옮김
-	//fout.seekp (2, ios_base::beg);
-
-	//// 4. 위치 2에 0을 출력하고 스트림 닫음
-	//fout << 0;
-	//fout.close ();
-
-	//// 5. out파일을 입력스트림으로 연다
-	//ifstream fin ("test.out");
-	//if (!fin)
-	//{
-	//	cerr << "Error opening test.out for reading" << endl;
-	//	return 1;
-	//}
-
-	//// 6. 첫째 토큰을 int 값으로 가져옮
-	//int testVal;
-	//fin >> testVal;
-
-	//// 7. 값 체크
-	//const int expected = 12045;
-	//if (testVal == expected)
-	//{
-	//	cout << "Test passed: Value is " << expected << endl;
-	//}
-	//else
-	//{
-	//	cout << "Test failed: Value is not " << expected
-	//		<< "(it was " << testVal << ")" << endl;
-	//}
-
-	ifstream inFile ("input.txt");  
-	ofstream outFile ("output.txt");
-	// input ouput 연관시키기
-	inFile.tie (&outFile);
-	
-	outFile << "Hello there!";
-	
-	string nextToken;
-	inFile >> nextToken;
-
-	changeNumberForID ("data.txt", 263, "415-555-454");
-
-	return 0;
-#pragma endregion
-
-}
+//
+//int main (int argc, char* argv[])
+//{
+//	
+//#pragma region Output
+//	//const char* test = "hello";
+//	//rawPutChar (test, 1);
+//	//rawWrite (test, strlen (test));
+//
+//	//cout << endl;
+//	//if (cout.good ())
+//	//	cout << "All good" << endl;
+//
+//	//cout.flush ();
+//	//if (cout.fail ())
+//	//	cerr << "Unable to flush to standard out" << endl;
+//
+//	//cout.exceptions (ios::failbit | ios::badbit | ios::eofbit);
+//	//try
+//	//{
+//	//	cout << "Hello World." << endl;
+//	//}
+//	//catch (const ios_base::failure& ex)
+//	//{
+//	//	cerr << "Caught exception: " << ex.what ()
+//	//		<< ", error code = " << ex.code () << endl;
+//	//}
+//
+//	//// 불 타입
+//	//bool myBool = true;
+//	//cout << "This is the default: " << myBool << endl;
+//	//cout << "This should be true: " << boolalpha << myBool << endl;
+//	//cout << "This should be 1: " << noboolalpha << myBool << endl;
+//
+//	//// 6개의 공간을 만듦
+//	//int i = 123;
+//	//printf ("This should be '   123': %6d\n", i);
+//	//cout << "This should be '   123': " << setw (6) << i << endl;
+//
+//	//// 6개에 공간 중 빈 공간을 0으로 채움
+//	//printf ("This should be '000123': %06d\n", i);
+//	//cout << "This should be '000123': " << setfill ('0') << setw (6) << i << endl;
+//
+//	//// *로 채움
+//	//cout << "This should be '***123': " << setfill ('*') << setw (6) << i << endl;
+//	//// 빈칸채우기 용 문자 리셋
+//	//cout << setfill (' ');
+//
+//	//// 소수점 값
+//	//cout.precision (5);
+//	//cout << "This should be '1.2346': " << 1.23456789 << endl;
+//
+//	//// 부동 소수점 값
+//	//double dbl = 1.452;
+//	//double dbl2 = 5;
+//	//cout << "This should be ' 5': " << setw (2) << noshowpoint << dbl2 << endl;
+//	//cout << "This should be @@1.452: " << setw (7) << setfill ('@') << dbl << endl;
+//	//
+//	//cout << setfill (' ');
+//
+//	//// 지역(국가)에 맞게 숫자 포맷팅
+//	//// 로케일 객체
+//	//cout.imbue (locale (""));
+//	//cout << "This is 1234567 formatted according to your location: " << 1234567 << endl;
+//
+//	//// 화폐포맷팅
+//	//cout << "This should be a money amount of 120000, "
+//	//	<< "formatted according to your location: "
+//	//	<< put_money ("120000") << endl;
+//
+//	//// 시간날짜 포맷팅
+//
+//	//time_t t_t = time (nullptr);
+//	//tm t;
+//	//localtime_s (&t, &t_t);
+//	//cout << "This should be the current date and time formatted according to your location: "
+//	//	<< put_time (&t, "%c") << endl;
+//
+//	//// C++14: 따옴표로 둘러쌓인 문자열
+//	//cout << "This should be: \"Quoted string with \\\"embedded quotes\\\".\": "
+//	//	<< quoted ("Quoted string with \"embedded quotes\".") << endl;
+//#pragma endregion
+//
+//#pragma region Input
+//	//string theName = readName (cin);
+//	//cout << "The name is \"" << theName << "\"" << endl;
+//
+//	// get & unget
+//	//getReservationData ();
+//	
+//	//string mystring;
+//	//getline (cin, mystring);
+//	///////
+//	//cout << "Enter numbers on separate lines to add. "
+//	//	<< "Use Control+D to finish (Control+Z in Windows)." << endl;
+//	//int sum = 0;
+//
+//
+//	//if (!cin.good ())
+//	//{
+//	//	cerr << "Standard input is in a bad state!" << endl;
+//	//	return 1;
+//	//}
+//
+//	//int number;
+//	//while (!cin.bad ())
+//	//{
+//	//	cin >> number;
+//	//	if (cin.good ())
+//	//	{
+//	//		sum += number;
+//	//	}
+//	//	else if (cin.eof ())
+//	//	{
+//	//		break;
+//	//	}
+//	//	else if (cin.fail ())
+//	//	{
+//	//		cin.clear (); // 에러 상태 클리어
+//	//		string badToken;
+//	//		cin >> badToken; // 잘못된 데이터를 꺼냄
+//	//		cerr << "WARNING: Bad input encountered: " << badToken << endl;
+//	//	}
+//	//}
+//	//cout << "The sum is " << sum << endl;
+//
+//	///////
+//	//cout << "First, let's create a muffin in code and output it." << endl;
+//
+//	//Muffin m;
+//	//m.setDescription ("Giant_Blueberry_Muffin");
+//	//m.setSize (42);
+//	//m.setHasChocolateChips (false);
+//
+//	//m.output ();
+//
+//	//cout << "Now we'll create a muffin from a string stream" << endl;
+//
+//	//istringstream instream ("My_Muffin 2 true");
+//	//Muffin m2 = createMuffin (instream);
+//
+//	//m2.output ();
+//
+//#pragma endregion
+//
+//#pragma region FileIO
+//	//ofstream outFile ("test.txt", ios_base::trunc);
+//	//if (!outFile.good ())
+//	//{
+//	//	cerr << "Error while opening output file!" << endl;
+//	//	return -1;
+//	//}
+//	//outFile << "There were " << argc << " arguments to this program." << endl;
+//	//outFile << "They are: " << endl;
+//	//for (int i = 0; i < argc; i++)
+//	//{
+//	//	outFile << argv[i] << endl;
+//	//}
+//
+//	//ofstream fout ("test.out");
+//	//if (!fout)
+//	//{
+//	//	cerr << "Error opening test.out for writing" << endl;
+//	//	return 1;
+//	//}
+//
+//	//// 1. 파일에 12345 출력
+//	//fout << "12345";
+//
+//	//// 2. 스트림의 위치가 5인지 체크
+//	//ios_base::streampos curPos = fout.tellp ();
+//	//if (5 == curPos)
+//	//{
+//	//	cout << "Test passed: Currently at position 5" << endl;
+//	//}
+//	//else
+//	//{
+//	//	cout << "Test failed: Not at position 5" << endl;
+//	//}
+//
+//	//// 3. 시작위치에서 출력스트림 위치를 2옮김
+//	//fout.seekp (2, ios_base::beg);
+//
+//	//// 4. 위치 2에 0을 출력하고 스트림 닫음
+//	//fout << 0;
+//	//fout.close ();
+//
+//	//// 5. out파일을 입력스트림으로 연다
+//	//ifstream fin ("test.out");
+//	//if (!fin)
+//	//{
+//	//	cerr << "Error opening test.out for reading" << endl;
+//	//	return 1;
+//	//}
+//
+//	//// 6. 첫째 토큰을 int 값으로 가져옮
+//	//int testVal;
+//	//fin >> testVal;
+//
+//	//// 7. 값 체크
+//	//const int expected = 12045;
+//	//if (testVal == expected)
+//	//{
+//	//	cout << "Test passed: Value is " << expected << endl;
+//	//}
+//	//else
+//	//{
+//	//	cout << "Test failed: Value is not " << expected
+//	//		<< "(it was " << testVal << ")" << endl;
+//	//}
+//
+//	ifstream inFile ("input.txt");  
+//	ofstream outFile ("output.txt");
+//	// input ouput 연관시키기
+//	inFile.tie (&outFile);
+//	
+//	outFile << "Hello there!";
+//	
+//	string nextToken;
+//	inFile >> nextToken;
+//
+//	changeNumberForID ("data.txt", 263, "415-555-454");
+//
+//	return 0;
+//#pragma endregion
+//
+//}
